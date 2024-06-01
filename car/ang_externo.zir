@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaR>
+<Construction>
+<Window x="0.0" y="0.0" w="8.0"/>
+<Objects>
+<Point name="P1" type="thick" x="-2.082585278276481" y="-0.057450628366248147" shape="circle">Ponto em -2.082585278276481, -0.057450628366248147</Point>
+<Circle name="c1" fixed="3.22" midpoint="P1" acute="true">Circunferência ao redor de P1 com raio 3.218556</Circle>
+<PointOn name="A" color="1" type="thick" showname="true" xoffset="-19" yoffset="-26" on="c1" alpha="2.778445643643617" shape="circle">Ponto sobre c1</PointOn>
+<PointOn name="C" color="1" type="thick" showname="true" xoffset="-10" yoffset="-31" on="c1" alpha="0.8621700546672266" shape="circle">Ponto sobre c1</PointOn>
+<PointOn name="B" color="1" type="thick" showname="true" xoffset="-4" on="c1" alpha="-1.702265022481766" shape="circle">Ponto sobre c1</PointOn>
+<PointOn name="D" color="1" type="thick" showname="true" yoffset="-3" on="c1" alpha="0.10866121584058802" shape="circle">Ponto sobre c1</PointOn>
+<Line name="l1" hidden="true" from="A" to="C">Reta passando por A e C</Line>
+<Line name="l2" hidden="true" from="B" to="D">Reta passando por B e D</Line>
+<Intersection name="P" type="thick" showname="true" xoffset="-4" yoffset="-2" first="l1" second="l2" shape="circle">Intersecção entre l1 e l2</Intersection>
+<Ray name="r1" from="P" to="A">Semi-Reta de P passando por A</Ray>
+<Ray name="r2" from="P" to="B">Semi-Reta de P passando por B</Ray>
+<Ray name="r3" from="P" to="D">Semi-Reta de P passando por D</Ray>
+<Ray name="r4" from="P" to="C">Semi-Reta de P passando por C</Ray>
+<Angle name="a1" color="5" type="thick" showvalue="true" background="true" xoffset="-30" yoffset="15" first="A" root="P" second="B" filled="true" acute="true">Ângulo A - P - B</Angle>
+<Angle name="a2" hidden="true" showvalue="true" first="C" root="P1" second="D" acute="true">Ângulo C - P1 - D</Angle>
+<Angle name="a3" hidden="true" showvalue="true" first="A" root="P1" second="B" acute="true">Ângulo A - P1 - B</Angle>
+<Expression name="E1" showname="true" showvalue="true" x="4.696588868940754" y="-1.3788150807899466" value="a(D,P1,C)" prompt="arcCD">Expressão &quot;a(D,P1,C)&quot; em 5.0, -1.0</Expression>
+<Expression name="E2" showname="true" showvalue="true" x="4.7540394973070015" y="-0.6894075403949733" value="a(A,P1,B)" prompt="arcAB">Expressão &quot;a(A,P1,B)&quot; em 5.0, -1.0</Expression>
+<Expression name="E4" showname="true" showvalue="true" x="3.6050269299820474" y="-2.9299820466786355" value="abs((a(A,P1,B)-a(D,P1,C)))/2.0" prompt="P=(arcAB-arcCD)/2">Expressão &quot;abs((a(A,P1,B)-a(D,P1,C)))/2.0&quot; em 4.0, -3.0</Expression>
+<Text name="Text1" x="3.145421903052064" y="-2.2692998204667867">ÂNGULO EXTERNO:</Text>
+<Text name="Text3" hidden="true" x="2.4776579352850536" y="-2.6132511556240368"></Text>
+<Expression name="E5" hidden="true" showname="true" showvalue="true" x="3.685670261941448" y="-3.2049306625577816" value="(a(A,P1,B)+a(D,P1,C))/2.0" prompt="P=(arcAB+arcCD)/2">Expressão &quot;(a(A,P1,B)+a(D,P1,C))/2.0&quot; em 4.0, -3.0</Expression>
+<Text name="Text4" x="-7.885098743267505" y="4.969479353680431">Move os pontos A, B, C ou D.</Text>
+</Objects>
+</Construction>
+</CaR>

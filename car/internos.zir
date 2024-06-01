@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaR>
+<Construction>
+<Window x="0.0" y="0.0" w="8.0"/>
+<Objects>
+<Point name="P1" hidden="true" x="-2.536585365853658" y="0.1341463414634143">Ponto em -2.536585365853658, 0.1341463414634143</Point>
+<Point name="Arrastar" color="5" showname="true" xoffset="-1" yoffset="-26" x="-4.902439024390244" y="2.3536585365853666">Ponto em -4.902439024390244, 2.3536585365853666</Point>
+<Angle name="a1" first="P1" root="Arrastar" fixed="304.0" acute="true">Ângulo P1 - Arrastar de tamanho 304.0</Angle>
+<Ray name="r1" from="Arrastar" to="P1">Raio de Arrastar até P1</Ray>
+<PointOn name="P3" hidden="true" on="a1" x="-5.019770280213445" y="1.6269861258561078">Ponto sobre a1</PointOn>
+<Segment name="s1" hidden="true" from="P3" to="P1">Segmento de Linha de P3 até P1</Segment>
+<Segment name="s2" from="P1" to="Arrastar">Segmento de Linha de P1 até Arrastar</Segment>
+<Segment name="s3" from="Arrastar" to="P3">Segmento de Linha de Arrastar até P3</Segment>
+<Point name="P4" hidden="true" x="-5.853660000000001" y="-3.6219500000000004" fixed="true">Ponto em &quot;-5.853660000000001&quot;, &quot;-3.6219500000000004&quot;</Point>
+<Point name="P5" hidden="true" x="-1.0731700000000004" y="-3.6463400000000004" fixed="true">Ponto em &quot;-1.0731700000000004&quot;, &quot;-3.6463400000000004&quot;</Point>
+<Ray name="r4" from="P4" to="P5">Raio de P4 até P5</Ray>
+<Point name="P6" hidden="true" x="-4.90244" y="2.304880000000001" fixed="true">Ponto em &quot;-4.90244&quot;, &quot;2.304880000000001&quot;</Point>
+<Segment name="s4" hidden="true" from="P4" to="P6">Segmento de Linha de P4 até P6</Segment>
+<PointOn name="Arrastar*" color="2" showname="true" xoffset="-4" yoffset="-1" on="r4" x="-5.853660000000001" y="-3.6219500000000004">Ponto sobre r4</PointOn>
+<Parallel name="p1" point="Arrastar*" line="s4">Linha Paralela de Arrastar* até s4</Parallel>
+<PointOn name="P8" hidden="true" on="r4" x="5.853602676965679" y="-3.681680307288833">Ponto em 5.853658536585366, -3.6707317073170738</PointOn>
+<PointOn name="P9" hidden="true" on="p1" x="-4.7145047847701544" y="3.4758605004948477">Ponto em 3.3414634146341466, 2.1829268292682924</PointOn>
+<Angle name="a2" color="2" type="thick" first="P8" root="Arrastar*" second="P9" acute="true">Ângulo P8 - Arrastar* - P9</Angle>
+<Intersection name="I1" hidden="true" first="r4" second="r1">Intersecção entre r4 e r1</Intersection>
+<PointOn name="P10" hidden="true" on="r4" x="-5.292821958094709" y="-3.624811388653061">Ponto em -5.2926829268292686, -3.597560975609756</PointOn>
+<Angle name="a3" hidden="true" first="Arrastar" root="I1" second="P10" acute="true">Ângulo Arrastar - I1 - P10</Angle>
+<Point name="P11" hidden="true" x="-4.463414634146341" y="1.9146341463414642">Ponto em -4.463414634146341, 1.9146341463414638</Point>
+<PointOn name="P12" hidden="true" on="r4" x="1.438461264381794" y="-3.659154311197863">Ponto sobre r4</PointOn>
+<Angle name="a4" color="1" type="thick" first="P11" root="P12" second="P10" acute="true">Ângulo P11 - P12 - P10</Angle>
+<PointOn name="P13" hidden="true" on="a1" x="-5.019770280213445" y="1.6269861258561078">Ponto em -7.463414634146341, -0.23170731707317138</PointOn>
+<PointOn name="P14" hidden="true" on="r1" x="-1.9998394374580641" y="-0.3693988078561641">Ponto em -1.3170731707317076, -4.451219512195122</PointOn>
+<Angle name="a5" color="5" type="thick" first="P13" root="Arrastar" second="P14" acute="true">Ângulo P13 - Arrastar - P14</Angle>
+<Intersection name="I3" hidden="true" first="r1" second="r4">Intersecção entre r1 e r4</Intersection>
+<Intersection name="I4" hidden="true" first="a1" second="p1">Intersecção entre a1 e p1</Intersection>
+<Point name="P17" hidden="true" x="-4.90244" y="2.35366" fixed="true">Ponto em &quot;-4.90244&quot;, &quot;2.35366&quot;</Point>
+<PointOn name="P18" hidden="true" on="r4" x="-5.853660000000001" y="-3.6219500000000004" fixed="true">Ponto sobre r4</PointOn>
+<PointOn name="P19" hidden="true" on="r4" x="1.4878600187000006" y="-3.6594063430000014" fixed="true">Ponto sobre r4</PointOn>
+<Polygon name="poli1" color="3" background="true" point1="P18" point2="P19" point3="P17">Polígono P18, P19, P17</Polygon>
+<Text name="Text1" x="0.12195121951219434" y="5.158536585365854">Move os ângulos azul e vermelho de modo
+que, com o verde, somem um ângulo raso (180º).</Text>
+<Text name="Text2" x="0.21951219512195053" y="3.8414634146341458">Para voltares à posição inicial actualiza a página.</Text>
+<Point name="P20" hidden="true" x="-4.951219512195122" y="2.3292682926829267">Ponto em -4.951219512195122, 2.3292682926829267</Point>
+<Point name="P21" hidden="true" x="1.9024390243902438" y="-0.5731707317073171">Ponto em 1.9024390243902438, -0.5731707317073171</Point>
+<Angle name="a7" color="5" type="thick" first="P18" root="P17" second="P19" acute="true">Ângulo P18 - P17 - P19</Angle>
+<Angle name="a10" color="2" type="thick" first="P19" root="P18" second="P17" acute="true">Ângulo P19 - P18 - P17</Angle>
+</Objects>
+</Construction>
+</CaR>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaR>
+<Construction>
+<Window x="0.1372583002030474" y="2.4" w="8.0"/>
+<Track track="Gráfico" on="r1" move="Ângulo (rad)"/>
+<Objects>
+<Point name="P1" hidden="true" x="-1.0" y="0.0" fixed="true">Ponto em &quot;-1.0&quot;, &quot;0.0&quot;</Point>
+<Point name="P2" hidden="true" x="3.141592653589793" y="0.0" fixed="true">Ponto em &quot;3.141592653589793&quot;, &quot;0.0&quot;</Point>
+<Point name="P3" hidden="true" x="0.0" y="-1.0" fixed="true">Ponto em &quot;0.0&quot;, &quot;-1.0&quot;</Point>
+<Point name="P4" hidden="true" x="0.0" y="5.0" fixed="true">Ponto em &quot;0.0&quot;, &quot;5.0&quot;</Point>
+<Ray name="r1" color="2" type="thick" from="P1" to="P2">Raio de P1 até P2</Ray>
+<Ray name="r2" color="2" type="thick" from="P3" to="P4">Raio de P3 até P4</Ray>
+<PointOn name="Ângulo (rad)" color="1" type="thick" showname="true" xoffset="-30" yoffset="3" on="r1" x="2.038984727825889" y="0.0">Ponto sobre r1</PointOn>
+<Point name="P6" hidden="true" showname="true" x="-7.0" y="3.0" fixed="true">Ponto em &quot;-7.0&quot;, &quot;3.0&quot;</Point>
+<Point name="P7" hidden="true" showname="true" x="-7.0" y="-1.0" fixed="true">Ponto em &quot;-7.0&quot;, &quot;-1.0&quot;</Point>
+<Segment name="s1" color="5" hidden="true" from="P6" to="P7">Segmento de Linha de P6 até P7</Segment>
+<PointOn name="P8" hidden="true" on="s1" x="-7.0" y="-1.0">Ponto sobre s1</PointOn>
+<PointOn name="P9" hidden="true" showname="true" on="s1" x="-7.0" y="-1.0">Ponto sobre s1</PointOn>
+<Point name="C" xoffset="-4" yoffset="-5" x="-4.5" y="5.0" shape="circle" fixed="true">Ponto em &quot;-4.5&quot;, &quot;5.0&quot;</Point>
+<Point name="P11" hidden="true" showname="true" x="-4.46" y="7.0" fixed="true">Ponto em &quot;-4.46&quot;, &quot;7.0&quot;</Point>
+<Circle name="c1" through="P11" midpoint="C" acute="true">Círculo ao redor de C até P11</Circle>
+<PointOn name="deslocar recta" color="5" type="thick" showname="true" xoffset="-43" yoffset="4" on="s1" x="-7.0" y="0.8382470119521912">Ponto sobre s1</PointOn>
+<Point name="P13" hidden="true" showname="true" x="-2.0" y="y(&quot;deslocar recta&quot;)" fixed="true">Ponto em &quot;-2.0&quot;, &quot;y(&quot;deslocar recta&quot;)&quot;</Point>
+<Segment name="r" color="3" type="thick" showname="true" xoffset="111" yoffset="4" from="deslocar recta" to="P13">Segmento de Linha de deslocar recta até P13</Segment>
+<Point name="A" type="thick" showname="true" xoffset="-20" yoffset="-24" x="-4.5+2.0*cos(180.0*x(&quot;Ângulo (rad)&quot;)/3.141592653589793+90.0)" y="5.0+2.0*sin(180.0*x(&quot;Ângulo (rad)&quot;)/3.141592653589793+90.0)" shape="circle" fixed="true">Ponto em &quot;-4.5+2.0*cos(180.0*x(&quot;Ângulo (rad)&quot;)/3.141592653589793+90.0)&quot;, &quot;5.0+2.0*sin(180.0*x(&quot;Ângulo (rad)&quot;)/3.141592653589793+90.0)&quot;</Point>
+<Angle name="Ângulo" color="1" type="thin" showname="true" background="true" xoffset="-4" yoffset="5" first="P11" root="C" second="A" display="small" filled="true">Ângulo P11 - C - A</Angle>
+<Segment name="s3" from="P11" to="C">Segmento de Linha de P11 até C</Segment>
+<Segment name="s4" from="C" to="A">Segmento de Linha de C até A</Segment>
+<Plumb name="pl1" hidden="true" showname="true" point="A" line="r" valid="true">Perpendicular de A até r</Plumb>
+<Intersection name="I1" hidden="true" first="pl1" second="r">Intersecção entre pl1 e r</Intersection>
+<Segment name="d(A,r)" showname="true" xoffset="4" yoffset="-1" from="I1" to="A" arrow="true">Segmento de Linha de I1 até A</Segment>
+<Segment name="s6" from="A" to="I1" arrow="true">Segmento de Linha de A até I1</Segment>
+<Point name="Gráfico" type="thick" showname="true" xoffset="-3" yoffset="-26" x="x(&quot;Ângulo (rad)&quot;)" y="d(A,I1)" shape="circle" fixed="true">Ponto em &quot;x(&quot;Ângulo (rad)&quot;)&quot;, &quot;d(A,I1)&quot;</Point>
+<Expression name="E1" hidden="true" showname="true" showvalue="true" x="4.440047" y="4.577955" value="x(Ângulo (rad))" prompt="Valor">Expressão &quot;x(Ângulo (rad))&quot; em 4.44, 4.58</Expression>
+</Objects>
+</Construction>
+</CaR>

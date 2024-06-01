@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaR>
+<Construction>
+<Window x="5.931370849898476" y="3.2" w="8.0"/>
+<Animate animate="P5" via0="s1"/>
+<Objects>
+<Point name="P1" hidden="true" x="0.0" y="8.0" shape="dot" fixed="true">Ponto em &quot;0.0&quot;, &quot;8.0&quot;</Point>
+<Point name="P2" hidden="true" x="2.0*3.141592653589793" y="8.0" shape="dot" fixed="true">Ponto em &quot;2.0*3.141592653589793&quot;, &quot;8.0&quot;</Point>
+<Point name="P3" x="5.0" y="4.0" shape="circle" fixed="true">Ponto em &quot;5.0&quot;, &quot;4.0&quot;</Point>
+<Point name="P4" hidden="true" x="5.42426406871193" y="6.969848480983499">Ponto em 5.42426406871193, 6.969848480983499</Point>
+<Circle name="c1" background="true" through="P4" fixed="3.0" midpoint="P3" acute="true">Circunferência de centro em P3 passando por P4 com raio &quot;3.0&quot;</Circle>
+<Segment name="s1" type="thin" hidden="true" from="P1" to="P2">Segmento de Linha de P1 até P2</Segment>
+<PointOn name="P5" hidden="true" on="s1" x="4.612831853071788" y="8.0" shape="dot">Ponto sobre s1</PointOn>
+<Point name="P6" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793)&quot;</Point>
+<Point name="P10" hidden="true" x="10.06" y="3.08" fixed="true">Ponto em &quot;10.06&quot;, &quot;3.08&quot;</Point>
+<Parallel name="p1" hidden="true" point="P10" line="s1">Linha Paralela de P10 até s1</Parallel>
+<PointOn name="P11" hidden="true" on="p1" x="12.5" y="3.078049000000001" fixed="true">Ponto sobre p1</PointOn>
+<Midpoint name="M1" hidden="true" first="P10" second="P11">Ponto Médio entre P10 e P11</Midpoint>
+<Plumb name="pl1" hidden="true" point="M1" line="p1" valid="true">Perpendicular de M1 até p1</Plumb>
+<PointOn name="P12" hidden="true" on="pl1" x="11.28" y="5.18" fixed="true">Ponto sobre pl1</PointOn>
+<Segment name="s4" hidden="true" from="P12" to="P10">Segmento de Linha de P12 até P10</Segment>
+<Segment name="s5" hidden="true" from="P10" to="P11">Segmento de Linha de P10 até P11</Segment>
+<Segment name="s6" hidden="true" from="P11" to="P12">Segmento de Linha de P11 até P12</Segment>
+<Point name="P16" hidden="true" showname="true" x="x(P6)" y="y(P6)-1.5" fixed="true">Ponto em &quot;x(P6)&quot;, &quot;y(P6)-1.5&quot;</Point>
+<Segment name="s9" hidden="true" from="P6" to="P16">Segmento de Linha de P6 até P16</Segment>
+<Point name="P17" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-45.0)&quot;</Point>
+<Point name="P18" hidden="true" x="x(P17)" y="y(P17)-1.5" fixed="true">Ponto em &quot;x(P17)&quot;, &quot;y(P17)-1.5&quot;</Point>
+<Segment name="s10" hidden="true" from="P17" to="P18">Segmento de Linha de P17 até P18</Segment>
+<Point name="P19" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-2.0*45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-2.0*45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-2.0*45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-2.0*45.0)&quot;</Point>
+<Point name="P20" hidden="true" x="x(P19)" y="y(P19)-1.5" fixed="true">Ponto em &quot;x(P19)&quot;, &quot;y(P19)-1.5&quot;</Point>
+<Segment name="s11" hidden="true" from="P19" to="P20">Segmento de Linha de P19 até P20</Segment>
+<Point name="P21" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-3.0*45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-3.0*45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-3.0*45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-3.0*45.0)&quot;</Point>
+<Point name="P22" hidden="true" x="x(P21)" y="y(P21)-1.5" fixed="true">Ponto em &quot;x(P21)&quot;, &quot;y(P21)-1.5&quot;</Point>
+<Segment name="s12" hidden="true" from="P21" to="P22">Segmento de Linha de P21 até P22</Segment>
+<Point name="P23" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-4.0*45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-4.0*45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-4.0*45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-4.0*45.0)&quot;</Point>
+<Point name="P24" hidden="true" x="x(P23)" y="y(P23)-1.5" fixed="true">Ponto em &quot;x(P23)&quot;, &quot;y(P23)-1.5&quot;</Point>
+<Segment name="s13" hidden="true" from="P23" to="P24">Segmento de Linha de P23 até P24</Segment>
+<Point name="P25" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-5.0*45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-5.0*45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-5.0*45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-5.0*45.0)&quot;</Point>
+<Point name="P26" hidden="true" x="x(P25)" y="y(P25)-1.5" fixed="true">Ponto em &quot;x(P25)&quot;, &quot;y(P25)-1.5&quot;</Point>
+<Segment name="s14" hidden="true" from="P25" to="P26">Segmento de Linha de P25 até P26</Segment>
+<Point name="P27" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-6.0*45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-6.0*45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-6.0*45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-6.0*45.0)&quot;</Point>
+<Point name="P28" hidden="true" x="x(P27)" y="y(P27)-1.5" fixed="true">Ponto em &quot;x(P27)&quot;, &quot;y(P27)-1.5&quot;</Point>
+<Segment name="s15" hidden="true" from="P27" to="P28">Segmento de Linha de P27 até P28</Segment>
+<Point name="P29" type="thick" x="5.0+3.0*cos(180.0*x(P5)/3.141592653589793-7.0*45.0)" y="4.0+3.0*sin(180.0*x(P5)/3.141592653589793-7.0*45.0)" shape="circle" fixed="true">Ponto em &quot;5.0+3.0*cos(180.0*x(P5)/3.141592653589793-7.0*45.0)&quot;, &quot;4.0+3.0*sin(180.0*x(P5)/3.141592653589793-7.0*45.0)&quot;</Point>
+<Point name="P30" hidden="true" x="x(P29)" y="y(P29)-1.5" fixed="true">Ponto em &quot;x(P29)&quot;, &quot;y(P29)-1.5&quot;</Point>
+<Segment name="s16" hidden="true" from="P29" to="P30">Segmento de Linha de P29 até P30</Segment>
+<Parallel name="p5" hidden="true" point="P18" line="s5">Linha Paralela de P18 até s5</Parallel>
+<PointOn name="P31" hidden="true" on="p5" x="x(P18)-1.0" y="4.67229" fixed="true">Ponto sobre p5</PointOn>
+<PointOn name="P32" hidden="true" on="p5" x="x(P18)+1.0" y="4.67229" fixed="true">Ponto sobre p5</PointOn>
+<Segment name="s17" color="5" type="thick" from="P31" to="P32">Segmento de Linha de P31 até P32</Segment>
+<Parallel name="p6" hidden="true" point="P20" line="s5">Linha Paralela de P20 até s5</Parallel>
+<PointOn name="P33" hidden="true" on="p6" x="x(P20)-1.0" y="5.170207" fixed="true">Ponto sobre p6</PointOn>
+<PointOn name="P34" hidden="true" on="p6" x="x(P20)+1.0" y="5.170207" fixed="true">Ponto sobre p6</PointOn>
+<Segment name="s18" color="1" type="thick" from="P33" to="P34">Segmento de Linha de P33 até P34</Segment>
+<Parallel name="p7" hidden="true" point="P22" line="s5">Linha Paralela de P22 até s5</Parallel>
+<PointOn name="P35" hidden="true" on="p7" x="x(P22)-1.0" y="4.890171000000001" fixed="true">Ponto sobre p7</PointOn>
+<PointOn name="P36" hidden="true" on="p7" x="x(P22)+1.0" y="4.890171000000001" fixed="true">Ponto sobre p7</PointOn>
+<Segment name="s19" color="2" type="thick" from="P35" to="P36">Segmento de Linha de P35 até P36</Segment>
+<Parallel name="p8" hidden="true" point="P24" line="s5">Linha Paralela de P24 até s5</Parallel>
+<PointOn name="P37" hidden="true" on="p8" x="x(P24)-1.0" y="5.156649000000002" fixed="true">Ponto sobre p8</PointOn>
+<PointOn name="P38" hidden="true" on="p8" x="x(P24)+1.0" y="5.156649000000002" fixed="true">Ponto sobre p8</PointOn>
+<Segment name="s20" color="3" type="thick" from="P37" to="P38">Segmento de Linha de P37 até P38</Segment>
+<Parallel name="p9" hidden="true" point="P26" line="s5">Linha Paralela de P26 até s5</Parallel>
+<PointOn name="P39" hidden="true" on="p9" x="x(P26)-1.0" y="5.350244000000002" fixed="true">Ponto sobre p9</PointOn>
+<PointOn name="P40" hidden="true" on="p9" x="x(P26)+1.0" y="5.350244000000002" fixed="true">Ponto sobre p9</PointOn>
+<Segment name="s21" color="4" type="thick" from="P39" to="P40">Segmento de Linha de P39 até P40</Segment>
+<Parallel name="p10" hidden="true" point="P28" line="s5">Linha Paralela de P28 até s5</Parallel>
+<PointOn name="P42" hidden="true" on="p10" x="x(P28)-1.0" y="5.239547000000002" fixed="true">Ponto sobre p10</PointOn>
+<PointOn name="P43" hidden="true" on="p10" x="x(P28)+1.0" y="5.239547000000002" fixed="true">Ponto sobre p10</PointOn>
+<Segment name="s22" color="5" type="thick" from="P42" to="P43">Segmento de Linha de P42 até P43</Segment>
+<Parallel name="p11" hidden="true" point="P30" line="s5">Linha Paralela de P30 até s5</Parallel>
+<PointOn name="P44" hidden="true" on="p11" x="x(P30)-1.0" y="2.588083000000001" fixed="true">Ponto sobre p11</PointOn>
+<PointOn name="P46" hidden="true" on="p11" x="x(P30)+1.0" y="2.588083000000001" fixed="true">Ponto sobre p11</PointOn>
+<Segment name="s23" color="1" type="thick" from="P44" to="P46">Segmento de Linha de P44 até P46</Segment>
+<Parallel name="p12" hidden="true" point="P16" line="s5">Linha Paralela de P16 até s5</Parallel>
+<PointOn name="P47" hidden="true" on="p12" x="x(P16)-1.0" y="4.68269" fixed="true">Ponto sobre p12</PointOn>
+<PointOn name="P48" hidden="true" on="p12" x="x(P16)+1.0" y="4.68269" fixed="true">Ponto sobre p12</PointOn>
+<Segment name="s24" color="2" type="thick" from="P47" to="P48">Segmento de Linha de P47 até P48</Segment>
+<Midpoint name="M2" hidden="true" first="P29" second="P30">Ponto Médio entre P29 e P30</Midpoint>
+<Midpoint name="M3" hidden="true" first="P6" second="P16">Ponto Médio entre P6 e P16</Midpoint>
+<Midpoint name="M4" hidden="true" first="P17" second="P18">Ponto Médio entre P17 e P18</Midpoint>
+<Midpoint name="M5" hidden="true" first="P19" second="P20">Ponto Médio entre P19 e P20</Midpoint>
+<Midpoint name="M6" hidden="true" first="P21" second="P22">Ponto Médio entre P21 e P22</Midpoint>
+<Midpoint name="M7" hidden="true" first="P23" second="P24">Ponto Médio entre P23 e P24</Midpoint>
+<Midpoint name="M8" hidden="true" first="P25" second="P26">Ponto Médio entre P25 e P26</Midpoint>
+<Midpoint name="M9" hidden="true" first="P27" second="P28">Ponto Médio entre P27 e P28</Midpoint>
+<Polygon name="poli2" color="1" background="true" point1="P44" point2="M2" point3="P46">Polígono P44, M2, P46</Polygon>
+<Polygon name="poli3" color="2" background="true" point1="P47" point2="M3" point3="P48">Polígono P47, M3, P48</Polygon>
+<Polygon name="poli4" color="5" background="true" point1="P31" point2="M4" point3="P32">Polígono P31, M4, P32</Polygon>
+<Polygon name="poli5" color="4" background="true" point1="P33" point2="M5" point3="P34">Polígono P33, M5, P34</Polygon>
+<Polygon name="poli6" color="2" background="true" point1="P35" point2="M6" point3="P36">Polígono P35, M6, P36</Polygon>
+<Polygon name="poli7" color="3" background="true" point1="P37" point2="M7" point3="P38">Polígono P37, M7, P38</Polygon>
+<Polygon name="poli8" color="4" background="true" point1="P39" point2="M8" point3="P40">Polígono P39, M8, P40</Polygon>
+<Polygon name="poli9" color="5" background="true" point1="P42" point2="M9" point3="P43">Polígono P42, M9, P43</Polygon>
+<Point name="P49" hidden="true" x="7.378230877799785" y="6.065555105021327">Ponto em 7.378230877799785, 6.065555105021327</Point>
+<Circle name="c2" background="true" through="P49" fixed="3.15" midpoint="P3" acute="true">Circunferência de centro em P3 passando por P49 com raio &quot;3.15&quot;</Circle>
+<Plumb name="pl2" hidden="true" point="P3" line="s5" valid="true">Perpendicular de P3 até s5</Plumb>
+<PointOn name="P50" hidden="true" on="pl2" x="5.0" y="-1.6500000000000001" fixed="true">Ponto sobre pl2</PointOn>
+<Plumb name="pl3" hidden="true" point="P50" line="pl2" valid="true">Perpendicular de P50 até pl2</Plumb>
+<PointOn name="P51" hidden="true" on="pl3" x="x(P50)-1.5" y="-1.6500000000000001" fixed="true">Ponto sobre pl3</PointOn>
+<PointOn name="P52" hidden="true" on="pl3" x="x(P50)+1.5" y="-1.6500000000000001" fixed="true">Ponto sobre pl3</PointOn>
+<Segment name="s25" type="thick" from="P51" to="P3">Segmento de Linha de P51 até P3</Segment>
+<Segment name="s26" type="thick" from="P3" to="P52">Segmento de Linha de P3 até P52</Segment>
+<Segment name="s27" type="thick" from="P3" to="P50">Segmento de Linha de P3 até P50</Segment>
+<Segment name="s28" type="thick" from="P51" to="P52">Segmento de Linha de P51 até P52</Segment>
+<Segment name="s29" from="P6" to="P3">Segmento de Linha de P6 até P3</Segment>
+<Segment name="s30" from="P17" to="P3">Segmento de Linha de P17 até P3</Segment>
+<Segment name="s31" from="P19" to="P3">Segmento de Linha de P19 até P3</Segment>
+<Segment name="s32" from="P21" to="P3">Segmento de Linha de P21 até P3</Segment>
+<Segment name="s33" from="P23" to="P3">Segmento de Linha de P23 até P3</Segment>
+<Segment name="s34" from="P25" to="P3">Segmento de Linha de P25 até P3</Segment>
+<Segment name="s35" from="P27" to="P3">Segmento de Linha de P27 até P3</Segment>
+<Segment name="s36" from="P29" to="P3">Segmento de Linha de P29 até P3</Segment>
+<Segment name="s37" from="P29" to="M2">Segmento de Linha de P29 até M2</Segment>
+<Segment name="s38" from="P6" to="M3">Segmento de Linha de P6 até M3</Segment>
+<Segment name="s39" from="P17" to="M4">Segmento de Linha de P17 até M4</Segment>
+<Segment name="s40" from="P19" to="M5">Segmento de Linha de P19 até M5</Segment>
+<Segment name="s41" from="P21" to="M6">Segmento de Linha de P21 até M6</Segment>
+<Segment name="s42" from="P23" to="M7">Segmento de Linha de P23 até M7</Segment>
+<Segment name="s43" from="P25" to="M8">Segmento de Linha de P25 até M8</Segment>
+<Segment name="s44" from="P27" to="M9">Segmento de Linha de P27 até M9</Segment>
+</Objects>
+</Construction>
+</CaR>

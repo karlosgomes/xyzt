@@ -1,0 +1,95 @@
+1.0.10:
+- added undo function for the very last move; this option expires
+  after twenty minutes or when the opponent moves
+- bug fixed: if a black pawn was promoted on tile a1, the history
+  browser did not recognize this, but moved the pawn to a1 
+  (knight), b1 (bishop), c1 (rook) or d1 (queen)
+
+1.0.9:
+- Kg8, Kg1, Kc8, Kc1 are no longer interpreted as castling 
+
+1.0.8:
+- fixed a bug in the checkmate test (if two chessmen in a row 
+  threatened the king the test failed though the first chessman
+  could be taken blocking the second one)
+
+1.0.7:
+- chess board frame color, chess board coordinate color, credits
+  for the chessmen icons and the width of the main table are now
+  defined in a file called images/wcg/board.php 
+- only N,B,R,Q are allowed as upgrade identifiers for a pawn
+  entering the last file
+- degenerated pawn attack [a-h][a-h] is understood by history
+  browser
+- a two-step king move is interpreted as castling command if the 
+  destination would be his destination after castling
+- the correct stats are chosen for the mainpage header (previously
+  if a username equalled the first characters of another username
+  the wrong stats where chosen)
+
+1.0.6:
+- games can be displayed as plain PGN format
+- renamed Move to Round in the game header
+- added a javascript-based history browser
+- fixed a bug that showed the 'Archive' button for white player
+  after game was already archived  
+- security check added to prevent exploit by gamefile variable
+
+1.0.5:
+- fixed a bug that allowed a king to escape a check by castling
+- the very last move is additionally displayed in full notation
+- changed chess coordinates from upper to lower case
+- castling info is no longer displayed
+- the move history is always in the normal chess notation
+- only x is now accepted to indicate an attack (previously :
+  was allowed as well)
+- fixed a bug that disintegrated a pawn when entering last file
+  by full move command
+- added some Javascript to allow move input by clicking a chessman
+
+1.0.4:
+- pawns can become either knight,bishop,rook or queen when entering 
+  the last file
+- added a user ranking 
+- names of resources (users,games,archive) can be renamed for
+  security reasons
+- improved handling of POST and GET variables to make it work
+  with PHP >= 4.3
+- switched colors for chessmen imbalance
+- added command DELETE which allows to delete a game without 
+  affecting the statistics before any actual move was performed from 
+  your side
+- fixed a bug which caused a red light when it was the user's turn
+  to archive or delete a finished game from the 'My Games' list
+- if a game is over the status will tell the outcome of it
+- updated help with a consistent notation for pawn attacks
+- removed TODO-rule where king might be left checked when
+  the opponent king is checked in the same instance
+
+1.0.3:
+- added P=Pawn to the list of chessmen identifiers in help.php
+- logout works again
+
+1.0.2:
+- an appropriate message is displayed when viewing games the
+  user does not participate in
+- apostrophes in a comment no longer create backslashes
+- statistics are updated correctly even if one username is
+  completely contained in another username as beginning string 
+- viewing games of friends now works for users with friend
+  restrictions too
+- reduced use of sessions to one variable
+
+1.0.1:
+- if the number if killed chessmen differs for both players the
+  imbalance is displayed at the right-hand side of the board
+- added date of last move to game info
+- re-arranged mainpage to allow viewing games of friends
+- archive button will not show up when game was already archived
+- updated README with a hint about how to fix screwed PHP sessions
+- updated help with explanation about pawn move notation
+- added missing style sheet
+
+1.0:
+- initial public release
+

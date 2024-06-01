@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaR>
+<Construction>
+<Window x="0.0" y="0.0" w="11.313708498984761"/>
+<Objects>
+<Point name="P1" x="0.02492" y="0.02492" shape="dot" fixed="true">Ponto em &quot;0.02492&quot;, &quot;0.02492&quot;</Point>
+<Point name="Arrastar*" color="5" type="thick" showname="true" xoffset="-10" yoffset="-3" x="5.74335049183936" y="-1.8164210892865444">Ponto em 5.74335049183936, -1.8164210892865444</Point>
+<Segment name="U" color="1" type="thick" showname="true" xoffset="-1" yoffset="26" from="P1" to="Arrastar*" arrow="true">Segmento de Linha de P1 até Arrastar*</Segment>
+<Point name="Arrastar" color="5" type="thick" showname="true" xoffset="-19" yoffset="-26" x="-2.975470736736053" y="4.445906856634684">Ponto em -2.975470736736053, 4.445906856634684</Point>
+<Segment name="V" color="2" type="thick" showname="true" xoffset="6" yoffset="-4" from="P1" to="Arrastar" arrow="true">Segmento de Linha de P1 até Arrastar</Segment>
+<Parallel name="p1" hidden="true" point="Arrastar*" line="V">Linha Paralela de Arrastar* até V</Parallel>
+<Parallel name="p2" hidden="true" point="Arrastar" line="U">Linha Paralela de Arrastar até U</Parallel>
+<Intersection name="I1" first="p2" second="p1" shape="dot">Intersecção entre p2 e p1</Intersection>
+<Segment name="U+V" color="5" type="thick" showname="true" xoffset="8" yoffset="5" from="P1" to="I1" arrow="true">Segmento de Linha de P1 até I1</Segment>
+<Segment name="s4" type="thin" background="true" from="Arrastar*" to="I1">Segmento de Linha de Arrastar* até I1</Segment>
+<Segment name="s5" type="thin" from="Arrastar" to="I1">Segmento de Linha de Arrastar até I1</Segment>
+</Objects>
+</Construction>
+</CaR>
