@@ -1,4 +1,0 @@
-<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
-<a href="http://s13.sitemeter.com/stats.asp?site=s13matnaesa" target="_top">
-<img src="http://s13.sitemeter.com/meter.asp?site=s13matnaesa" alt="Site Meter" border=0></a>
-<!--WEBBOT bot="HTMLMarkup" Endspan -->
